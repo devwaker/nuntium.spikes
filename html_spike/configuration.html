@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Nuntium</title>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="imagetoolbar" content="no" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="css/easy.css" media="screen" />
+<link rel="stylesheet" href="css/easyprint.css" media="print" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/easy.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+<div id="container">
+	
+	<div id="header">
+		
+		<h1>Nuntium</h1>
+		<ul id="nav">
+			<li><a href="#">Dashboard</a></li>
+			<li><a href="#">Configuration</a>
+				<ul>
+					<li><a href="#applications" class="jump">Applications</a></li>
+					<li><a href="#routingrules" class="jump">Routing rules</a></li>
+					<li><a href="#channels" class="jump">Channels</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Logs</a>
+				<ul>
+					<li><a href="#">AT</a></li>
+					<li><a href="#">AO</a></li>
+					<li><a href="#">General</a></li>
+				</ul>			
+			</li>
+		</ul>
+
+	</div>
+
+	<div class="content">
+		
+		<div class="main">
+		
+			<h1 class="left" id="applications">Applications</h1>
+			<a class="right" href="#">Create a new application</a>
+			<table cellpadding="0" cellspacing="0">
+				<thead>
+					<tr>
+						<th width="30px"></th>
+						<th width="35%">Interface</th>
+						<th width="30%">Properties</th>
+						<th width="35%">Application Rules</th>
+						<th width="30px"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="columnup" rowspan="2"></td>
+						<td>
+							Type: <a href="#">QST</a>
+						</td>
+						<td class="centralcolumn">
+							<h2>ApplicationName</h2>
+							<div>Route via last Channel: yes</div>
+							<div>Strategy: Single (prio)</div>
+							<div>Delivery Acknoledge: yes</div>
+							<div><a href="#">Edit settings</a></div>
+							<div class="bottom right">
+							<a href="#">Change password</a>
+							<a href="#">Delete</a>
+							</div>
+						</td>
+						<td>
+							<dl>
+								<dt>When</dt>
+								<dd><code>From</code> <small>equals</small> <q>sms://123</q>
+									<strong>And</strong> <code>To</code> <small>equals</small> <q>2020</q>
+								</dd>
+								<dt>Then set</dt>
+								<dd><code>Subject</code> <small>to</small> <q>Hello</q></dd>
+							</dl>
+							<dl>
+								<dt>When</dt>
+								<dd><code>From</code> <small>equals</small> <q>sms://123</q>
+									<strong>And</strong> <code>To</code> <small>equals</small> <q>2020</q>
+								</dd>
+								<dt>Then set</dt>
+								<dd><code>Subject</code> <small>to</small> <q>Hello</q></dd>
+							</dl>
+							<a class="right" href="#">Edit</a>
+						</td>
+						<td class="columndown" rowspan="2"></td>						
+					</tr>
+					<tr>
+						<td>Table data</td>
+						<td class="centralcolumn">Table data</td>
+						<td>Table data</td>
+					</tr>
+				</tbody>	
+			</table>
+			
+			<h1 id="routingrules">Routing</h1>
+			<table cellpadding="0" cellspacing="0">
+				<thead>
+					<tr>
+						<th width="30px"></th>					
+						<th width="50%">Routing Rules</th>
+						<th width="50%"></th>
+						<th width="30px"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="columnup" rowspan="2"></td>					
+						<td>
+							<dl>
+								<dt>When</dt>
+								<dd><code>From</code> <small>equals</small> <q>sms://123</q>
+									<strong>And</strong> <code>To</code> <small>equals</small> <q>2020</q>
+								</dd>
+								<dt>Then set</dt>
+								<dd><code>Subject</code> <small>to</small> <q>Hello</q></dd>
+							</dl>
+							<dl>
+								<dt>When</dt>
+								<dd><code>From</code> <small>equals</small> <q>sms://123</q>
+									<strong>And</strong> <code>To</code> <small>equals</small> <q>2020</q>
+								</dd>
+								<dt>Then set</dt>
+								<dd><code>Subject</code> <small>to</small> <q>Hello</q></dd>
+							</dl>
+							<a class="right" href="#">Edit</a>
+						</td>
+						<td>Table data</td>
+						<td class="columndown" rowspan="2"></td>
+					</tr>
+					<tr>
+						<td>Table data</td>
+						<td>Table data</td>
+					</tr>
+				</tbody>	
+			</table>
+			
+			<h1 class="left" id="channels">Channels</h1>
+			<a class="right" href="#">Create a new channel</a>			
+			<table class="show" cellpadding="0" cellspacing="0">
+				<thead>
+					<tr>
+						<th width="30px"></th>
+						<th width="35%">Channel Rules</th>
+						<th width="30%">Properties</th>
+						<th width="35%">Restrictions</th>
+						<th width="30px"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="columnup" rowspan="2"></td>
+						<td>
+							<dl>
+								<dt>When</dt>
+								<dd><code>From</code> <small>equals</small> <q>sms://123</q>
+									<strong>And</strong> <code>To</code> <small>equals</small> <q>2020</q>
+								</dd>
+								<dt>Then set</dt>
+								<dd><code>Subject</code> <small>to</small> <q>Hello</q></dd>
+							</dl>
+							<dl>
+								<dt>When</dt>
+								<dd><code>From</code> <small>equals</small> <q>sms://123</q>
+									<strong>And</strong> <code>To</code> <small>equals</small> <q>2020</q>
+								</dd>
+								<dt>Then set</dt>
+								<dd><code>Subject</code> <small>to</small> <q>Hello</q></dd>
+							</dl>
+							<a class="right" href="#">Edit</a>
+						</td>
+
+						<td class="centralcolumn">
+							<h3>ChannelName</h3>
+							<div>Direction: bi-directional</div>
+							<div>Channel type: SMPP</div>
+							<div>Priority: 100</div>
+							<div>Application exclusivity: none</div>
+							<a class="right" href="#">Edit</a>
+						</td>
+						<td>
+							Send messages through this channel only
+							<dl>
+								<dt>When recipient</dt>
+								<dd><code>Country</code> <small>is</small> <q>Thailand</q></dd>
+								<dt>And</dt>
+								<dd><code>Carrier</code> <small>is</small> <q>DTAC</q>
+									<strong>or</strong> <small>is unknown</small> 
+								</dd>
+							</dl>
+							
+						</td>
+						
+						<td class="columndown" rowspan="2"></td>						
+					</tr>
+					<tr>
+						<td>Table data</td>
+						<td class="centralcolumn">Table data</td>
+						<td>Table data</td>
+					</tr>
+				</tbody>	
+			</table>
+		</div>
+		<div class="secondary">
+			<h1>Help</h1>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<p>InSTEDD</p>
+	</div>
+	
+</div>
+</body>
+</html>
